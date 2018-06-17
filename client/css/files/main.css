@@ -1,0 +1,9 @@
+*        {font-family: arial; color: white;}
+body     {background-color: #273c75;}
+div.a    {background: linear-gradient(#192a56, #273c75); height: 100px;}
+div.b    {text-align: center; font-size: 60px;   vertical-align: middle; height: 100%; width: 100%; display: block;}
+div.c    {background-color: #273c75; height: 240px;}
+div.d    {text-align: left;   font-size: 20px;   vertical-align: middle; height: 100%; width: 100%; display: block;}
+div.e    {background: linear-gradient(#273c75, #192a56); height: 50px;}
+div.f    {text-align: center; font-size: 35px;   vertical-align: middle; height: 100%; width: 100%; display: block;}
+image    {margin: 0px auto;}
