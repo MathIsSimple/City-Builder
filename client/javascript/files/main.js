@@ -12,8 +12,10 @@ function setup() {
   water           = loadImage("images/tiles/water.jpg");
   solar_panel     = loadImage("images/tiles/solar_panel.jpg");
   shop_bg         = loadImage("images/tiles/shop_bg.jpg");
+  track_img       = loadImage("images/tiles/track.jpg");
+  train_img       = loadImage("images/tiles/train.png");
   tiles = []; background_music = new backgroundMusic();
-  gui = new Gui(); creatures = [];
+  gui = new Gui(); creatures = []; trains = [];
   let i = 0;
   for (let x = -50*5; x <= 1000+5*50-50; x += 50) {
     for (let y = -50*5; y <= 500+5*50-50; y += 50) {
@@ -32,6 +34,8 @@ function setup() {
     }
     creatures.push(new Creature(creatures_positions[i][0], creatures_positions[i][1], index));
   }
+
+  trains.push(new Train(-50*5+1, 450+5*50));
 
   creature_images = [];
   creature_images.push(loadImage("images/creatures/Creature00.png"));

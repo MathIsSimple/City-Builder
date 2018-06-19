@@ -57,6 +57,8 @@ function object_render(x, y, rgb, index, s, a) {
       image(destruction_img, -Tsize / 2, -Tsize / 2, Tsize, Tsize);
     } else if(structures[index][2] === 13) {
       image(road2_img, -Tsize / 2, -Tsize / 2, Tsize, Tsize);
+    } else if(structures[index][2] === 14) {
+      image(track_img, -Tsize / 2, -Tsize / 2, Tsize, Tsize);
     }
   pop();
 }

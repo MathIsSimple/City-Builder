@@ -41,22 +41,28 @@ server.on('request', (request, response) => {
       for (let x = -50*5; x <= 1000+5*50-50; x += 50) {
         for (let y = -50*5; y <= 500+5*50-50; y += 50) {
           let index = 0, Thealth = 0;
-          if(x === 0       && y === 50)   {index = 2;  Thealth = 15;}
-          if(x === 50      && y === 50)   {index = 2;  Thealth = 15;}
-          if(x === 2*50    && y === 50)   {index = 2;  Thealth = 15;}
-          if(x === 0       && y === 2*50) {index = 4;  Thealth = 25;}
-          if(x === 50      && y === 2*50) {index = 4;  Thealth = 25;}
-          if(x === 2*50    && y === 2*50) {index = 4;  Thealth = 25;}
+          if(x === 0       && y === 50)        {index = 2;  Thealth = 15;}
+          if(x === 50      && y === 50)        {index = 2;  Thealth = 15;}
+          if(x === 2*50    && y === 50)        {index = 2;  Thealth = 15;}
+          if(x === 0       && y === 2*50)      {index = 4;  Thealth = 25;}
+          if(x === 50      && y === 2*50)      {index = 4;  Thealth = 25;}
+          if(x === 2*50    && y === 2*50)      {index = 4;  Thealth = 25;}
 
-          if(x === 11*50   && y === 50)   {index = 3;  Thealth = 25;}
-          if(x === 11*50   && y === 2*50) {index = 3;  Thealth = 25;}
-          if(x === 11*50   && y === 3*50) {index = 11; Thealth = 25;}
-          if(x === 12*50   && y === 50)   {index = 1;  Thealth = 15;}
-          if(x === 12*50   && y === 2*50) {index = 1;  Thealth = 15;}
-          if(x === 13*50   && y === 50)   {index = 1;  Thealth = 15;}
-          if(x === 13*50   && y === 2*50) {index = 1;  Thealth = 15;}
-          if(x === 12*50   && y === 3*50) {index = 6;  Thealth = 50;}
-          if(x === 13*50   && y === 3*50) {index = 7;  Thealth = 50;}
+          let check_x = -50*5, check_y = 450+5*50;
+          while (check_x < 1000+5*50) {
+            if(x === check_x && y === check_y) {index = 14; Thealth = 50;}
+            check_x += 50;
+          }
+
+          if(x === 11*50   && y === 50)        {index = 3;  Thealth = 25;}
+          if(x === 11*50   && y === 2*50)      {index = 3;  Thealth = 25;}
+          if(x === 11*50   && y === 3*50)      {index = 11; Thealth = 25;}
+          if(x === 12*50   && y === 50)        {index = 1;  Thealth = 15;}
+          if(x === 12*50   && y === 2*50)      {index = 1;  Thealth = 15;}
+          if(x === 13*50   && y === 50)        {index = 1;  Thealth = 15;}
+          if(x === 13*50   && y === 2*50)      {index = 1;  Thealth = 15;}
+          if(x === 12*50   && y === 3*50)      {index = 6;  Thealth = 50;}
+          if(x === 13*50   && y === 3*50)      {index = 7;  Thealth = 50;}
           map.push(index);
           health.push(Thealth);
         }

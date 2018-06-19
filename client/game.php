@@ -13,6 +13,7 @@
     <script type="text/javascript" src="javascript/files/game_manager.js"></script>
     <script type="text/javascript" src="javascript/files/game_logic.js"></script>
     <script type="text/javascript" src="javascript/files/input.js"></script>
+    <script type="text/javascript" src="javascript/files/train.js"></script>
     <script type="text/javascript" src="javascript/files/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/files/index.css">
     <script type="text/javascript">

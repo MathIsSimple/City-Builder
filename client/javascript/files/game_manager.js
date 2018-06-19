@@ -13,13 +13,18 @@ function renderGame() {
         }
       }
     }
-    for (let i = 0; i < tiles.length; i ++) {
-      tiles[i].render_range();
+    for (let tile of tiles) {
+      tile.render_range();
     }
 
-    for (let i = 0; i < creatures.length; i ++) {
-      creatures[i].render();
-      creatures[i].update();
+    for (let creature of creatures) {
+      creature.render();
+      creature.update();
+    }
+
+    for (let train of trains) {
+      train.render();
+      train.update();
     }
 
     selection.xonscreen = sx; selection.yonscreen = sy;
